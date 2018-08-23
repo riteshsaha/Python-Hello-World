@@ -1,4 +1,9 @@
 ---
 applications:
-- name: hello-world-flask
-  memory: 500M
+- name: python-service-app
+  memory: 1024MB
+  instances: 1
+  host: python-service-app
+  domains:
+  - apps.wdc-np.itcna.vmware.com
+  timeout: 600
